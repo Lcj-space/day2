@@ -28,12 +28,14 @@
           #mnu li:hover{
               background-color: olivedrab;
           }
+            #mnu .zi {
+                display: none;
+            }
             #mnu .zi li {
                 list-style: none;
                 border-bottom: 2px rosybrown dashed;
                 text-align: left;
                 background: gold;
-                /*display: none;*/
             }
 
             #mnu .zi a
@@ -75,8 +77,46 @@
                 <li><a href="#">a</a></li>
             </ul>
         </li>
-
+           <!--js中的变量包括（字母数字 下划线 $ &&）-->
     </ul>
+    <!--<script>-->
+      <!--var oUl=document.getElementById("mnu");-->
+      <!--var aLi = oUl.getElementsByTagName('li');-->
+      <!--//alert(aLi.length);-->
+        <!--//12li 3class='top-1'-->
+        <!--for(var i=0;i<aLi.length;i++)-->
+        <!--{-->
+            <!--if (aLi[i].className == 'top-1')-->
+            <!--{-->
+                <!--aLi[i].onmouseover= function()-->
+                <!--{-->
+                    <!--var oSub=this.getElementsByTagName('ul')[0];-->
+                    <!--oSub.style.display='block';-->
+                <!--}-->
+                <!--aLi[i].onmouseout= function()-->
+                <!--{-->
+                    <!--var oSub=this.getElementsByTagName('ul')[0];-->
+                    <!--oSub.style.display='none';-->
+                <!--}-->
+            <!--}-->
+        <!--}-->
+    <!--</script>-->
+    <script>
+        var oUl=document.getElementById("mnu");
+        var aLi=oUl.getElementsByTagName("li");
+        for(var i=0;i<aLi.length;i++){
+            if(aLi[i].className=='top-1'){
+                aLi[i].onmouseover=function () {
+                    var oSu=this.getElementsByTagName('ul')[0];
+                    oSu.style.display='block';
+
+                }
+            }
+        }
+
+
+
+    </script>
 
     </body>
     </html>
