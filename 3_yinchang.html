@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <!--权重值 id100 class 10 tag 1-->
+        <title>隐藏菜单</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #mnu .top-1{
+                list-style: none;
+                float: left;
+                background: grey;
+                margin-right: 5px;
+                width: 100px;
+                height: 30px;
+
+            }
+          #mnu,  a{
+                 text-decoration:none;
+                 display: block;
+                 line-height: 30px;
+                  text-align: center;
+            }
+
+          #mnu li:hover{
+              background-color: olivedrab;
+          }
+            #mnu .zi li {
+                list-style: none;
+                border-bottom: 2px rosybrown dashed;
+                text-align: left;
+                background: gold;
+                /*display: none;*/
+            }
+
+            #mnu .zi a
+            {
+                display: block;
+                text-align: left;
+                text-indent: 10px;
+
+            }
+           #mnu .zi a:hover{
+               background-color: aqua;
+           }
+
+        </style>
+    </head>
+    <body>
+    <ul id="mnu">
+        <li class="top-1">
+            <a href="#">lin1</a>
+            <ul class="zi">
+                <li><a href="#">a</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">c</a></li>
+            </ul>
+        </li>
+        <li class="top-1">
+            <a href="#">line2</a>
+            <ul class="zi">
+                <li><a href="#">a</a></li>
+                <li><a href="#">c</a></li>
+                <li><a href="#">b</a></li>
+            </ul>
+        </li>
+        <li class="top-1">
+            <a href="#">line3</a>
+            <ul class="zi">
+                <li><a href="#">c</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">a</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    </body>
+    </html>
