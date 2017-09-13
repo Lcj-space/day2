@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .content{
+            width: 100px;
+            height: 100px;
+            background: darkcyan;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .chang{
+            flex: 3;
+            height: 75%;
+            width: 50%;
+            background: sandybrown;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+
+        }
+        .hide{
+
+            flex: 1;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+ <div class="content">
+     <div class="chang"></div>
+     <div class="hide"></div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+        .content{
+            width: 100px;
+            height: 30px;
+            border-radius:15px;
+            margin: 0 auto;
+            position: relative;border: 1px solid black;
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000px;
+
+        }
+        .content:hover{
+            background: gold;
+
+            /*transition: background-color 2s;*/
+        }
+        .content-r{
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            /*transition: left 2s ease ;*/
+            border: 1px solid gainsboro;
+
+        }
+       .content-r:hover{
+           animation: my 2s forwards;
+           /*left: 70px;*/
+
+       }
+        @keyframes my {
+            0%{left: 0;top:0}
+            100%{left: 70px ;top: 0;}
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="content">
+    <div class="content-r"> </div>
+</div>
+<script>
+    function findLUSLength(a, b) {
+        /** 初始化 **/
+        const MAXN = Math.max(a.length, b.length);
+        let dp = new Array(MAXN);
+        for(let i = 0; i < MAXN; i++) {
+            dp[i] = new Array(MAXN);
+        }
+
+        let res = -1;
+        for(let i = 0; i < a.length; i++) {
+            for(let j = 0; j < b.length; j++) {
+                if(a[i] != b[j]) {
+                    if(i > 0 && j > 0) {
+                        dp[i][j] = dp[i - 1][j - 1] + 1;
+                    } else {
+                        dp[i][j] = 1;
+                    }
+                    res = Math.max(dp[i][j], res);
+                }
+            }
+        }
+        return res;
+    }
+   console.log(findLUSLength('aba','abc'));
+</script>
+</body>
+</html>

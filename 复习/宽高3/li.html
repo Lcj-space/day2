@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+</div>
+<script>
+    var oUl = document.querySelector('div');
+    oUl.onclick=function (e) {
+        e = e || window.event;
+        console.log(e.target.innerHTML);
+    }
+</script>
+</body>
+</html>
