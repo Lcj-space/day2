@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<ul class="list">
+    <li>aa <a href="/">删除</a></li>
+    <li>bb <a href="/">删除</a></li>
+    <li>cc <a href="/">删除</a></li>
+</ul>
+<script>
+    var oUl = document.querySelector('.list');
+    var aLi = oUl.querySelectorAll('li');
+    var aA = oUl.querySelectorAll('a');
+    for(let i =0 ;i<aA.length;i++){
+        aA[i].onclick =function () {
+            aA[i].removeAttribute('href');
+          oUl.removeChild(aLi[i]);
+        }
+    }
+</script>
+</body>
+</html>

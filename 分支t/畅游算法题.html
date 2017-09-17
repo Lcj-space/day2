@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[4,5,6,5];
+    var prt;
+
+    while(arr) {
+        var len = arr.length;
+        if(len%2==0){
+            var left = arr.splice(0,len/2);
+            if(left.toString()<arr.toString()){
+                left.splice(left.length-1,1,++left[left.length-1]);
+            }
+            prt = left.concat(left);
+            break;
+        }else{
+            var left = arr.splice(0,parseInt(len/2));
+            var right = arr.splice(parseFloat(len/2));
+            console.log(right);
+            console.log(left);
+            if(left.toString() < right.toString()){
+               arr.splice(0,1,++arr[0]);
+                console.log(arr);
+                prt = left.concat(arr,left);
+            }
+            break;
+        }
+    }
+    console.log(prt.join(''))
+</script>
+</body>
+</html>

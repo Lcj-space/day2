@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+        .head{
+            width: 100%;
+            height: 50px;
+            background: gray;
+            line-height: 50px;
+        }
+        .head ul{
+            float: left;
+            width: 80%;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .head ul li{
+            text-align: center;
+            flex: 1;
+            border-radius: 15px;
+        }
+        .head ul .s{
+            background:seagreen;
+        }
+        .head a{
+            display: inline-block;
+            width: 20%;
+            height: 100%;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .content {
+            width: 100%;
+            height: 500px;
+            background: sandybrown;
+            position: relative;
+        }
+        .content div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: none;
+        }
+        .content .checked{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <ul class="head-tab">
+        <li class="s">体育头条</li>
+        <li>最热</li>
+        <li>NBN</li>
+    </ul>
+    <a href="http://www.sina.com.cn/">换一批</a>
+</div>
+<div class="content">
+    <div class="checked">1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<script>
+    var data = {a: 1, b: 2, c: 3, d: 4};
+   var d =  Object.keys(data).filter(function(x) { return data[x]>2 ;})
+    console.log(d);
+   console.log(data['c']);
+</script>
+</body>
+</html>
