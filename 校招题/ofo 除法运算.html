@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a;
+    let b;
+    function fun(num1, num2) {
+        let res = num1 / num2;
+        if (res < 0) {
+            res = Math.ceil(res);
+        } else {
+            res = Math.floor(res);
+        }
+        if (res * num2 == num1) {
+            return res;
+        } else {
+            res += ".";
+            let arg = num1 % num2;
+            if (arg < 0){
+                arg *= -1;
+            }
+            res += fun2(arg, num2);
+            return res.toString();
+        }
+    }
+    function fun2(num1, num2) {
+        num1 *= 10;
+        let res = num1 / num2;
+        if (res < 0) {
+            res = Math.ceil(res);
+        } else {
+            res = Math.floor(res);
+        }
+        if (res * num2 == num1) {
+            return res.toString();
+        } else {
+            if (num1 % num2 == num1 / 10) {
+                return res + "(" + res + ")";
+            }
+            res = res.toString();
+            res += fun2(num1 % num2, num2);
+            return res;
+        }
+    }
+    a = 1;
+    b = 5;
+    console.log(a);
+    console.log(b);
+    console.log(fun(a, b));
+    a = 40;
+    b = 30;
+    console.log(a);
+    console.log(b);
+    console.log(fun(a, b));
+    a = 10;
+    b = 3;
+    console.log(a);
+    console.log(b);
+    console.log(fun(a, b));
+    a = 5;
+    b = 5;
+    console.log(a);
+    console.log(b);
+    console.log(fun(a, b));
+    a = -40;
+    b = 30;
+</script>
+</body>
+</html>

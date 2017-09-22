@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function solve(s1, s2) {
+        s1 = s1.split('');
+        s2= s2.split('');
+        var arr=[];
+        var len1 = s1.length;
+        var len2  = s2.length;
+        var len = len1<len2?len2:len1;
+        for(let i = 0 ; i< len;i++){
+            if(s1.indexOf(i)==s2.indexOf(i)){
+                arr.push(arr[i]);
+            }else {
+                return len;
+            }
+        }
+
+    }
+    /******************************结束写代码******************************/
+
+
+    var res;
+
+    var _s1 = 'abc';
+    var _s2 = 'nrar';
+
+    res = solve(_s1, _s2);
+    console.log(res);
+</script>
+
+</body>
+</html>
