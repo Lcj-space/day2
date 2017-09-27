@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr =[12,23,32,12,12,43,54,32];
+    let arr1 = new Set(arr);
+    arr1 = Array.from(arr1);
+    let count=0;
+    let arr2=[];
+    console.log(arr);
+    for(let i=0;i<arr1.length-1;i++){
+
+        for (let j =0;j<arr.length-1;j++ ){
+            if (arr1[i]==arr[j]){
+                ++count;
+            }else if(j==arr.length-2){
+                arr2.push(count);
+                count = 0;
+            }
+
+
+        }
+    }
+    console.log(arr1);
+    console.log(arr2);
+</script>
+
+</body>
+</html>

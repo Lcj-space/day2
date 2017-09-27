@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMost(arr) {
+        if (!arr.length) return
+        if (arr.length === 1) return 1
+        var res = {}
+        for (var i=0,l=arr.length;i<l;i++) {
+            if (!res[arr[i]]) {
+                res[arr[i]] = 1
+            } else {
+                res[arr[i]]++
+            }
+        }
+        var keys = Object.keys(res)
+        var maxNum = 0, maxEle
+        for (var i=0,l = keys.length;i<l;i++) {
+            if (res[keys[i]] > maxNum) {
+                maxNum = res[keys[i]]
+                maxEle = keys[i]
+            }
+        }
+        return maxEle
+    }
+    let arr =[12,23,32,12,12,43,54,32];
+    console.log(findMost(arr));
+</script>
+
+</body>
+</html>
