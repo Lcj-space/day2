@@ -10,7 +10,7 @@
         if (!arr.length) return
         if (arr.length === 1) return 1
         var res = {}
-        for (var i=0,l=arr.length;i<l;i++) {
+        for (var i = 0, l = arr.length; i < l; i++) {
             if (!res[arr[i]]) {
                 res[arr[i]] = 1
             } else {
@@ -19,15 +19,20 @@
         }
         var keys = Object.keys(res)
         var maxNum = 0, maxEle
-        for (var i=0,l = keys.length;i<l;i++) {
+        var str = [];
+        for (var i = 0, l = keys.length; i < l; i++) {
             if (res[keys[i]] > maxNum) {
                 maxNum = res[keys[i]]
                 maxEle = keys[i]
             }
         }
-        return maxEle
+        for (var j = 0; j < maxNum; j++) {
+            str.push(maxEle);
+        }
+        return str.toString().replace(/,/g, '')
     }
-    let arr =[12,23,32,12,12,43,54,32];
+
+    let arr = ['t', 'e', 's', 't', 't'];
     console.log(findMost(arr));
 </script>
 

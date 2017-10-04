@@ -1,0 +1,56 @@
+{
+  "ret": true,
+  "errcode": "SUCCESS",
+  "errmsg": "成功",
+  "merchantCode": null,
+  "version": "20150808",
+  "data": {
+    "shopCode": "posmerchant01",
+    "merchantCode": "posmerchant01",
+    "parentMerchantCode": "",
+    "shopName": "门店名字:\t",
+    "status": 0,
+    "address": "门店地址:\t",
+    "phone": "门店电话:\t",
+    "country": "国家:\t",
+    "province": "省份:\t",
+    "city": "城市:\t",
+    "district": "区县\t",
+    "gps": "经纬度\t",
+    "shopEquips": [
+      {
+        "equipCode": "123412344",
+        "shopCode": "posmerchant01",
+        "equipName": "123412344",
+        "equipType": "POS",
+        "equipSN": "123412344",
+        "equipAppCode": "123412344",
+        "equipProducer": "BOC",
+        "clientInfo": "{\"assemVer\":\"60000001\",\"gid\":\"3722C5BB-65CF-1F46-6B9F-27A7C89A8272\",\"lat\":\"23.034059\",\"lon\":\"113.18124\",\"pid\":\"54206039f24048438219c2cfc993c793\",\"vid\":\"60003007\"}",
+        "relateThirdParts": "{\"pid\":\"equipApp01\",\"posId\":\"pos001\",\"thirdChannelMap\":{\"XY_CHANNEL\":{\"merchant\":\"199560157909\",\"name\":\"兴业银行测试账号\"},\"ZH_CHANNEL\":{\"merchant\":\"104110048162726\",\"name\":\"中行商户测试账号\"}}}",
+        "equipStatus": 0,
+        "ext": "test",
+        "gmtCreate": 1499412793000,
+        "gmtUpdate": 1499412793000
+      },
+      {
+        "equipCode": "123214214",
+        "shopCode": "posmerchant01",
+        "equipName": "设备名称\t",
+        "equipType": "POS",
+        "equipSN": "设备序列号SN\t",
+        "equipAppCode": "设备应用编码\t",
+        "equipProducer": "设备厂商\t",
+        "clientInfo": "设备客户端信息",
+        "relateThirdParts": "第三方关联信息",
+        "equipStatus": 0,
+        "ext": "扩展信息",
+        "gmtCreate": 1492757506000,
+        "gmtUpdate": 1492757506000
+      }
+    ],
+    "shopBankSettles": null,
+    "gmtCreate": 1492756926000,
+    "gmtUpdate": 1492756926000
+  }
+}
