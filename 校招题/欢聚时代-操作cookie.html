@@ -12,7 +12,7 @@
     {
         var exdate=new Date();
         exdate.setDate(exdate.getDate()+expiredays);
-        document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+        document.cookie=c_name+ "=" +encodeURI(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
     }
     function getCookie(c_name)
     {
@@ -23,11 +23,12 @@
                 var c_end=document.cookie.indexOf(";",c_start);
                 if (c_end==-1)
                     c_end=document.cookie.length;
-                return unescape(document.cookie.substring(c_start,c_end));
+                return decodeURI(document.cookie.substring(c_start,c_end));
             }
         }
         return "";
     }
+    console.log(getCookie());
 </script>
 </body>
 </html>
