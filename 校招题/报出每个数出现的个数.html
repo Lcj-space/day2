@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMost(arr) {
+        if (!arr.length) return;
+        if (arr.length === 1) return 1;
+        let res = {};
+        for (let i = 0, l = arr.length; i < l; i++) {
+            if (!res[arr[i]]) {
+                res[arr[i]] = 1
+            } else {
+                res[arr[i]]++
+            }
+        }
+        for (let key in res){
+            console.log(key +':'+ res[key])
+        }
+    }
+
+    let arr = ['t', 'e', 's', 't', 't'];
+  findMost(arr);
+</script>
+
+</body>
+</html>
