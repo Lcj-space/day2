@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMost(arr) {
+        if (!arr.length) return
+        if (arr.length === 1) return 1
+        var res = {}
+        for (var i = 0, l = arr.length; i < l; i++) {
+            res[arr[i]] = arr.indexOf(arr[i]);
+        }
+        var len = arr.length
+        for(var i =0 ;i<len-1;i++){
+            for (var j = 0 ; j< len-i-1 ; j++){
+                if(arr[j]>arr[j+1]){
+                    var tmp = arr[j];
+                    arr[j] =  arr[j+1];
+                    arr[j+1] = tmp;
+                }
+            }
+        }
+        var res1= {};
+        for (var i = 0, l = arr.length; i < l; i++) {
+            res1[arr[i]] = arr.indexOf(arr[i]);
+        }
+        var keys = Object.keys(res)
+        var count =0
+        for (var i = 0, l = keys.length; i < l; i++) {
+            if(res[keys[i]] !=res1[keys[i]]){
+            count++;
+            }
+        }
+       return count;
+    }
+
+    let arr = [3,2,1];
+    console.log(findMost(arr));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+{
+  "ret": true,
+  "errcode": "SUCCESS",
+  "errmsg": "成功",
+  "merchantCode": null,
+  "version": "20150808",
+  "data": {
+    "shopCode": "S2017101150960459",
+    "merchantCode": "M2017101106088436",
+    "parentMerchantCode": "PM2017101168857336",
+    "accountOpenData": {
+      "signAgent": "qunar",
+      "businessData": {
+        "merchantName": "四川百事通国际旅行社有限公司",
+        "industryType": "175",
+        "servicePhone": "028bc3o0276",
+        "busiScope": "入境旅游业务，国内旅游业务，会议服务，票务代理",
+        "licenseNo": "91510100730234423F",
+        "licensePhoto": "http://l-swift1.ops.dev.cn0.qunar.com/v1/AUTH_test/merchantBankInfo/attachfile-1507716930972.zip/1_1.jpg"
+      },
+      "contactData": {
+        "contactName": "吕利莉",
+        "contactMobile": "151c4tW0959",
+        "contactEmail": "lvlDui@517best.com#"
+      },
+      "corporateData": {
+        "name": "沈涛",
+        "mobile": "135o8Gw2987",
+        "identityType": "1",
+        "identityCode": "5102=CCXjZ1dbEP011",
+        "identityFrontPhoto": "http://l-swift1.ops.dev.cn0.qunar.com/v1/AUTH_test/merchantBankInfo/attachfile-1507716930972.zip/1_2.jpg",
+        "identityBackPhoto": "http://l-swift1.ops.dev.cn0.qunar.com/v1/AUTH_test/merchantBankInfo/attachfile-1507716930972.zip/1_3.jpg"
+      },
+      "shopData": {
+        "shopName": "四川旅游百事通",
+        "provinceName": "四川",
+        "provinceCode": "230000",
+        "cityName": "成都市",
+        "cityCode": "230100",
+        "districtName": "青羊区",
+        "districtCode": "230102",
+        "address": "成都市青羊区人民中路二段29号1栋28层06单元",
+        "gps": null
+      },
+      "settleData": {
+        "accountNo": "OziR95TAVL3822",
+        "accountType": "1",
+        "accountUser": "四川百事通国际旅行社有限公司",
+        "bankLinkNo": "303651000271",
+        "depositBankId": "7",
+        "depositBankName": "光大银行成都光华支行",
+        "provinceOfBank": "230000",
+        "cityOfBank": "230100",
+        "reservedMobile": "135o8Gw2987",
+        "cardHolderIdType": null,
+        "cardHolderIdNum": "",
+        "authorizedLetter": null,
+        "headSettleFileRecEmail": "",
+        "branchSettleFileRecEmail": "lvlDui@517best.com#"
+      },
+      "equipEnletData": {
+        "equipNum": 1,
+        "receiver": "成都市青羊区人民中路二段29号1栋28层06单元",
+        "receiverMobile": "151c4tW0959",
+        "deliverAddress": null,
+        "unionDebitPayRate": "0.005，20",
+        "unionCreditPayRate": "0.006000",
+        "alipayPayRate": "0.003000",
+        "weChatPayRate": "0.003000",
+        "enletChannel": null,
+        "equipAppCode": null
+      },
+      "bocConfigData": {
+        "bocMerchantCode": "104110047222492",
+        "terminalDatas": [
+          {
+            "terminalCode": "11830265",
+            "terminalSN": "17068007100023",
+            "terminalName": null
+          }
+        ]
+      }
+    },
+    "gmtCreate": 1507721275000,
+    "gmtUpdate": 1507721275000
+  }
+}
