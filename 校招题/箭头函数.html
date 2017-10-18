@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a ={
+        age:10,
+        sex :function () {
+           return ()=>{
+                console.log(this.age);
+            }
+        }
+    };
+    a.sex()();
+</script>
+
+</body>
+</html>
