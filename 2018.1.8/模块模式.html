@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    模块模式两个必要的条件
+    1.必须有外部封闭函数，改函数必须至少调用一次（每次调用都会创建一个新的模块实例）
+    2.封闭函数必须返回一个内部函数，这样内部函数才能在私有作用域中形成闭包，并且可以访问或者修改私有状态
+</p>
+<script>
+    var foo = (function model(id) {
+        function change() {
+         publicAPI.id = identify2()
+        }
+        function identify1() {
+            console.log(id)
+        }
+        function identify2() {
+            console.log(id.toUpperCase())
+        }
+
+        var publicAPI = {
+            change :change,
+            identify : identify1
+
+        };
+        return publicAPI
+    })("tom")
+    foo.identify()
+    foo.change()
+    foo.identify()
+</script>
+
+</body>
+</html>

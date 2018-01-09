@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //父类
+    function sup(name) {
+        this.name = name
+    }
+    //定义父类原型上的方法
+    sup.prototype.printName = function (){
+        console.log(this.name)
+    };
+
+    /*
+    *
+    * 调用call方法,继承sup超类属性
+    *
+    * */
+    function sub(name,age){
+        debugger
+        sup.call(this,name);
+        this.age = age
+    }
+
+    sub.prototype = new sup  ; //把子类sub的原型对象指向父类的实例化对象，这样即可以继承父类sup原型对象上的属性和方法
+    sub.prototype.constructor = sub ; //这时会有个问题子类的constructor属性会指向sup，手动把constructor属性指向子类sub
+    //这时就可以在父类的基础上添加属性和方法了
+    sub.prototype.printAge = function (){
+        console.log(this.age)
+    }
+
+    let jack = new sub('jack',20)
+    jack.printName()    //输出 : jack
+    jack.printAge()    //输出 : 20
+</script>
+</body>
+</html>
