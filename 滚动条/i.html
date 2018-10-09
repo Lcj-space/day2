@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+   .send-link-container{
+       background:#ffffff;
+       box-shadow:0 5px 20px 0 rgba(0,0,0,0.30);
+       border-radius:4px;
+       width:320px;
+       height:241px;
+       margin-left: -190px;
+       margin-top: -175px;
+       position: absolute;
+       left: 50%;
+       top: 45%;
+       padding: 20px 30px;
+    }
+
+        .send-link-title{
+            font-family:PingFangSC-Regular;
+            font-size:16px;
+            color:#36434d;
+            letter-spacing:0;
+            line-height:20px;
+            text-align:left;
+        }
+        .send-link-top{
+            height: 24px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 14px;
+            border-bottom: 2px dashed #e7eef3;
+        }
+        .send-link-top img{
+            width:80px;
+            height:24px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        .send-link-top-line{
+            display: inline-block;
+            background:#e7eef3;
+            width:1px;
+            height:16px;
+            margin-left: 10px;
+            position: absolute;
+            top: 4px;
+        }
+        .send-link-title{
+            margin-left: 20px;
+        }
+
+        .send-link-remind{
+            font-family:PingFangSC-Regular;
+            font-size:12px;
+            color:#667580;
+            line-height:20px;
+            text-align:center;
+            padding-top: 14px;
+            padding-bottom: 20px;
+        }
+
+        .send-link-validate {
+            position: relative;
+        }
+
+        .send-link-input-part {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #e4ebf0;
+            line-height: 40px;
+            position: relative;
+            box-sizing: border-box;
+            padding-right: 24px;
+        }
+
+        .send-link-input-part input {
+            text-indent: 15px;
+            border: none;
+            background: transparent;
+            outline: 0;
+            width: 100%;
+            height: 35px;
+            font-size: 14px;
+            color: #36434d;
+            margin-top: -10px;
+            line-height: 40px;
+            font-family: "Helvetica Neue", Tahoma, "PingFang SC", "Hiragino Sans GB",
+            "Microsoft YaHei", STHeitiSC, sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .send-link-input-part input:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #999;
+        }
+        .send-link-vali-code-get{
+            width:125px;
+            height:38px;
+            position: absolute;
+            right: 0;
+            top:1px;
+        }
+        .send-link-vali-code-get .code{
+            position: absolute;
+            width: 88px;
+            height: 38px;
+            background:#e7eef3;
+
+        }
+        .send-link-vali-code-get .change-code{
+            position: absolute;
+            width: 36px;
+            height: 38px;
+            right: 0;
+            background:#e7eef3;
+            cursor:pointer ;
+        }
+
+        .send-link-bottom{
+            background:#1687d9;
+            box-shadow:0 1px 2px 0 rgba(0,0,0,0.30);
+            border-radius:2px;
+            width:320px;
+            height:42px;
+            font-size:20px;
+            color:#ffffff;
+            line-height:36px;
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.95;
+            cursor: pointer;
+        }
+        .send-link-later{
+            margin-top: 20px;
+            text-align: center;
+            font-family:PingFangSC-Regular;
+            font-size:14px;
+            color:#667580;
+            line-height:20px;
+            /*text-align:left;*/
+        }
+        .send-link-later-title{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="send-link-container">
+       <div class="send-link-top">
+           <img src="logo.png" alt="">
+           <span class="send-link-top-line"></span>
+           <span class="send-link-title">发送激活链接至手机</span>
+       </div>
+       <!--error-->
+       <!--    ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+       <div class="error">
+           <span class="icon-error"></span>
+           <span class="error-msg"></span>
+       </div>
+       <!--    ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+       <div class="send-link-remind">收到激活短信，点击进行账号激活，激活成功后可登陆系统</div>
+       <div class="send-link-validate">
+           <div class="send-link-input-part">
+               <input class="" type="text" placeholder="请输入图型验证码" />
+               <span class="botton-line"></span>
+           </div>
+           <div class="send-link-vali-code-get">
+               <img class="code" src="" alt="验证码" />
+               <img  class="change-code" src="" alt="换一张">
+           </div>
+       </div>
+       <div class="send-link-bottom">发送</div>
+       <div class="send-link-later">
+           <a class="send-link-later-title">以后再说</a>
+       </div>
+   </div>
+</body>
+</html>

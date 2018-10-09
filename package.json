@@ -1,0 +1,23 @@
+{
+    "name": "day2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "cp .hooks/* .git/hooks/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lcj-space/day2.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lcj-space/day2/issues"
+    },
+    "homepage": "https://github.com/Lcj-space/day2#readme",
+    "devDependencies": {
+        "css-spring": "^4.1.0"
+    }
+}

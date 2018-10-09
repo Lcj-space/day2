@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+   .send-code-container{
+       background:#ffffff;
+       box-shadow:0 5px 20px 0 rgba(0,0,0,0.30);
+       border-radius:4px;
+       width:320px;
+       height:216px;
+       margin-left: -190px;
+       margin-top: -175px;
+       position: absolute;
+       left: 50%;
+       top: 45%;
+       padding: 20px 30px;
+    }
+
+        .send-code-title{
+            font-family:PingFangSC-Regular;
+            font-size:16px;
+            color:#36434d;
+            letter-spacing:0;
+            line-height:20px;
+            text-align:left;
+        }
+        .send-code-top{
+            height: 24px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 14px;
+            border-bottom: 2px dashed #e7eef3;
+        }
+        .send-code-top img{
+            width:80px;
+            height:24px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        .send-code-top-line{
+            display: inline-block;
+            background:#e7eef3;
+            width:1px;
+            height:16px;
+            margin-left: 10px;
+            position: absolute;
+            top: 4px;
+        }
+        .send-code-title{
+            margin-left: 20px;
+        }
+
+        .send-code-remind{
+            font-family:PingFangSC-Regular;
+            font-size:12px;
+            color:#667580;
+            line-height:20px;
+            text-align:center;
+            padding-top: 14px;
+            padding-bottom: 20px;
+        }
+
+        .send-code-validate{
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .send-code-input-part {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #e4ebf0;
+            line-height: 40px;
+            position: relative;
+            box-sizing: border-box;
+            padding-right: 24px;
+        }
+
+        .send-code-input-part input {
+            text-indent: 15px;
+            border: none;
+            background: transparent;
+            outline: 0;
+            width: 100%;
+            height: 35px;
+            font-size: 14px;
+            color: #36434d;
+            margin-top: -10px;
+            line-height: 40px;
+            font-family: "Helvetica Neue", Tahoma, "PingFang SC", "Hiragino Sans GB",
+            "Microsoft YaHei", STHeitiSC, sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .send-code-input-part input:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #999;
+        }
+        .vali-code-get{
+            width:125px;
+            height:38px;
+            position: absolute;
+            right: 0;
+            top:1px;
+        }
+        .vali-code-get .code{
+            position: absolute;
+            width: 88px;
+            height: 38px;
+            background:#e7eef3;
+
+        }
+        .vali-code-get .change-code{
+            position: absolute;
+            width: 36px;
+            height: 38px;
+            right: 0;
+            background:#e7eef3;
+            cursor: pointer;
+        }
+
+        .send-code-bottom{
+            background:#1687d9;
+            box-shadow:0 1px 2px 0 rgba(0,0,0,0.30);
+            border-radius:2px;
+            width:320px;
+            height:42px;
+            font-size:20px;
+            color:#ffffff;
+            line-height:36px;
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.95;
+            cursor: pointer;
+        }
+        .send-code-later{
+            margin-top: 20px;
+            text-align: center;
+            font-family:PingFangSC-Regular;
+            font-size:14px;
+            color:#667580;
+            line-height:20px;
+            /*text-align:left;*/
+        }
+        .send-code-later-title{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="send-code-container">
+       <div class="send-code-top">
+           <img src="logo.png" alt="">
+           <span class="send-code-top-line"></span>
+           <span class="send-code-title">发送验证码</span>
+       </div>
+       <!--error-->
+       <!--    ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+       <div class="error">
+           <span class="login-icon-error"></span>
+           <span class="error-msg">图形验证码输入错误</span>
+       </div>
+       <!--    ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+       <div class="send-code-validate">
+           <div class="send-code-input-part">
+               <input class="" type="text" placeholder="请输入图型验证码" />
+               <span class="botton-line"></span>
+           </div>
+           <div class="vali-code-get">
+               <img class="code" src="" alt="验证码" />
+               <img  class="change-code" src="" alt="换一张">
+           </div>
+       </div>
+       <div class="send-code-bottom">发送</div>
+       <div class="send-code-later">
+           <a class="send-code-later-title">以后再说</a>
+       </div>
+   </div>
+</body>
+</html>

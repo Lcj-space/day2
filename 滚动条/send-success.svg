@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#27D2B5" offset="0%"></stop>
+            <stop stop-color="#64E9B3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#1CCE89" offset="0%"></stop>
+            <stop stop-color="#1DCEB5" offset="100%"></stop>
+            <stop stop-color="#1CCE89" offset="24.3790643%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6">
+            <circle id="Oval-2" fill="#E3FCF4" cx="35" cy="35" r="35"></circle>
+            <g id="Group-4" transform="translate(15.000000, 20.000000)">
+                <rect id="Rectangle-3" fill="url(#linearGradient-1)" transform="translate(9.464466, 19.928932) rotate(-45.000000) translate(-9.464466, -19.928932) " x="6.46446609" y="9.92893219" width="6" height="20" rx="1"></rect>
+                <path d="M23.1187634,-2.73283781 L27.1186579,-2.73283781 C27.6709427,-2.73283781 28.1186579,-2.28512256 28.1186579,-1.73283781 C28.1186579,-1.72941445 28.1186404,-1.72599111 28.1186052,-1.72256793 L27.7781824,31.4233806 C27.7725516,31.97163 27.3265134,32.4131108 26.7782351,32.4131108 L21.7680175,32.4131108 L22.1188162,-1.74310769 C22.1244469,-2.29135707 22.5704851,-2.73283781 23.1187634,-2.73283781 Z" id="Rectangle-3-Copy" fill="url(#linearGradient-2)" transform="translate(24.943338, 14.840136) rotate(45.000000) translate(-24.943338, -14.840136) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

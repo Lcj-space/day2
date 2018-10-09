@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        body div:first-child{
+            width: 200px;
+            background: red;
+        }
+        body div:last-child{
+            flex: 1;
+            background: gold;
+        }
+
+    </style>
+</head>
+<body>
+<div>宽200 100%</div>
+<div>自适应 100%</div>
+<script src="./css.js"></script>
+</body>
+</html>
