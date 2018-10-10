@@ -18,6 +18,8 @@
     },
     "homepage": "https://github.com/Lcj-space/day2#readme",
     "devDependencies": {
-        "css-spring": "^4.1.0"
+        "css-spring": "^4.1.0",
+        "@talentui/cz-project-changelog": "^1.0.1",
+        "commitizen": "^3.0.2"
     }
 }
