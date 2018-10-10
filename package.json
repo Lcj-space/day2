@@ -5,8 +5,11 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "cp .hooks/* .git/hooks/"
+        "preTest": "git-cz"
     },
+    "pre-commit": [
+        "preTest"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Lcj-space/day2.git"
@@ -18,8 +21,9 @@
     },
     "homepage": "https://github.com/Lcj-space/day2#readme",
     "devDependencies": {
-        "css-spring": "^4.1.0",
         "@talentui/cz-project-changelog": "^1.0.1",
-        "commitizen": "^3.0.2"
+        "commitizen": "^3.0.2",
+        "css-spring": "^4.1.0",
+        "pre-commit": "^1.2.2"
     }
 }

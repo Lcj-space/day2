@@ -3,4 +3,4 @@
 echo -e "\e[1;34m hello shell \e[0m" 
 console.log('hello world!');
 
-npm run engine.js && npm run git-cz
+# npm run engine.js && npm run git-cz
