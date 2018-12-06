@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #mun{
+            /*background: black;*/
+            width: 100px;
+            height: 30px;
+        }
+        #mun .top-1{
+         background: black;
+            list-style: none;
+            /*margin-bottom: 3px;*/
+        }
+        #mun .zi{
+                display: none;
+        }
+        #mun .zi li{
+            color: aqua;
+            border-bottom: 2px dashed sienna;
+            background: darkgray;
+            text-align: center;
+        }
+        #mun a{
+            display: block;
+            text-decoration: none;
+            line-height: 30px;
+            /*background: black;*/
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<ul id="mun">
+    <li class="top-1">
+        <a href="#">lin1</a>
+        <ul class="zi">
+            <li>sublink1</li>
+            <li>sublink2</li>
+            <li>sublink3</li>
+        </ul>
+    </li>
+    <li class="top-1">
+        <a href="#">lin2</a>
+        <ul class="zi">
+            <li>sublink1</li>
+            <li>sublink2</li>
+            <li>sublink3</li>
+        </ul>
+    </li>
+
+</ul>
+<script>
+   const mixin = function(obj,mixins){
+     const newObj =obj
+     newObj.proptype = Object.create(obj.proptype);
+     for(let props of mixins){
+         if(mixins.hasOwnProperty(props)){
+             newObj.pr
+         }
+     } 
+   }
+</script>
+</body>
+</html>
